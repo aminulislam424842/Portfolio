@@ -1,0 +1,1259 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aminul Islam — Data Analyst & Freelance-Ready Assistant</title>
+  <meta name="description"
+    content="Turning Data into Decisions. CST Student & Freelance-Ready Assistant specializing in Data Processing, Excel, and Administrative Support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="assets/image/logo.png" alt="AIM" />
+        <span>Aminul<span class="text-accent">.</span></span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#timeline" class="nav-link">Journey</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+          <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-nav">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13" />
+            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+          </svg>
+          Hire Me
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-overlay" id="menuOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="menu-close" id="menuClose" aria-label="Close">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round">
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg>
+    </button>
+    <div class="mobile-menu-links">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#timeline" class="mobile-link">Journey</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+    <a href="#contact" class="btn btn-primary mobile-cta">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+        stroke-linecap="round" stroke-linejoin="round">
+        <line x1="22" y1="2" x2="11" y2="13" />
+        <polygon points="22 2 15 22 11 13 2 9 22 2" />
+      </svg>
+      Hire Me
+    </a>
+  </div>
+
+  <!-- Sticky Hire (Mobile) -->
+  <a href="#contact" class="sticky-hire" id="stickyHire">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <line x1="22" y1="2" x2="11" y2="13" />
+      <polygon points="22 2 15 22 11 13 2 9 22 2" />
+    </svg>
+    Hire Me
+  </a>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+
+    <div class="container hero-grid-layout">
+      <div class="hero-content">
+        <div class="reveal badge">
+          <span class="badge-dot"></span>
+          Available for Freelance
+        </div>
+
+        <h1 class="reveal reveal-d1 hero-title">
+          Turning Data<br />into <span class="gradient-text">Decisions</span>
+        </h1>
+
+        <p class="reveal reveal-d2 hero-subtitle">
+          CST Student | Data Analyst & Frontend Developer specializing in data
+          processing, dashboard UI design, and administrative automation.
+        </p>
+
+        <div class="reveal reveal-d3 hero-tags">
+          <span class="tag">Data Analyst</span>
+          <span class="tag">Frontend Dev</span>
+          <span class="tag">Dashboard UI</span>
+        </div>
+        <div class="reveal reveal-d4 hero-ctas">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22 2 15 22 11 13 2 9 22 2" />
+            </svg>
+            Hire Me
+          </a>
+          <a href="#projects" class="btn btn-outline btn-lg">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+            </svg>
+            View Projects
+          </a>
+          <a href="cv.html" target="_blank" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            View CV
+          </a>
+        </div>
+
+        <div class="reveal reveal-d5 hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-value">
+              <span class="counter" data-target="15">0</span>+
+            </div>
+            <div class="hero-stat-label">Projects</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">
+              <span class="counter" data-target="95">0</span>%
+            </div>
+            <div class="hero-stat-label">Data Accuracy</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">
+              <span class="counter" data-target="60">0</span>+ WPM
+            </div>
+            <div class="hero-stat-label">Typing Speed</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value">
+              <span class="counter" data-target="5">0</span>th
+            </div>
+            <div class="hero-stat-label">Semester</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal hero-image-area">
+        <div class="hero-image-wrapper">
+          <div class="hero-image-frame">
+            <img src="assets/image/1st.png" alt="Aminul Islam" />
+            <div class="hero-image-overlay"></div>
+          </div>
+
+          <div class="hero-float-card hero-float-card-1">
+            <div class="float-icon float-icon-green">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </div>
+            <div>
+              <div class="float-title">Task Completed</div>
+              <div class="float-sub">150+ entries</div>
+            </div>
+          </div>
+
+          <div class="hero-float-card hero-float-card-2">
+            <div class="float-icon float-icon-blue">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10" />
+                <line x1="12" y1="20" x2="12" y2="4" />
+                <line x1="6" y1="20" x2="6" y2="14" />
+              </svg>
+            </div>
+            <div>
+              <div class="float-title">Data Processing</div>
+              <div class="float-sub">90% accuracy</div>
+            </div>
+          </div>
+
+          <div class="hero-float-card hero-float-card-3">
+            <div class="float-icon float-icon-green">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <path d="M9 15l2 2 4-4"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="float-title">Structure Approved</div>
+              <div class="float-sub">
+                100% component layout and integrated
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-deco-1"></div>
+          <div class="hero-deco-2"></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section section-alt">
+    <div class="container about-grid">
+      <div class="reveal about-image-area">
+        <div class="about-image-frame">
+          <img src="assets/image/2nd.jpg" alt="About Aminul" />
+          <div class="about-image-overlay"></div>
+          <div class="about-overlay-card">
+            <div class="about-overlay-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+            </div>
+            <div>
+              <div class="about-overlay-title">Diploma in CST</div>
+              <div class="about-overlay-sub">5th Semester · Bangladesh</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-deco"></div>
+      </div>
+
+      <div class="about-content">
+        <span class="reveal section-label">About Me</span>
+        <h2 class="reveal reveal-d1 section-title">
+          Driven by Data,<br />Inspired by
+          <span class="gradient-text">Solution</span>
+        </h2>
+
+        <div class="reveal reveal-d2 about-text">
+          <p>
+            I'm <strong>Aminul Islam</strong>, a Computer Science and
+            Technology student currently in my 5th semester. My journey
+            started at Mosjid Mission Academy, where I completed my SSC in
+            2023, and it ignited a deep curiosity for how data shapes the
+            world around us—and how we can build better interfaces to interact
+            with that data.
+          </p>
+          <p>
+            What sets me apart isn't just technical skill — it's my
+            <strong>hybrid approach to problem-solving</strong>. I don't just
+            clean messy datasets or automate spreadsheet tasks; I also build
+            clean, functional frontend interfaces—like dashboards and data
+            entry systems—to make that data visually actionable and easy to
+            manage.
+          </p>
+          <p>
+            My goal is clear: build a
+            <strong>remote freelance career</strong> where I can help
+            businesses make smarter decisions through clean data, interactive
+            web UI, and efficient automated workflows.
+          </p>
+        </div>
+        <div class="reveal reveal-d3 about-info-grid">
+          <div class="about-info-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            <span>Bangladesh</span>
+          </div>
+          <div class="about-info-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+            </svg>
+            <span>CST, 5th Semester</span>
+          </div>
+          <div class="about-info-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <circle cx="12" cy="12" r="6" />
+              <circle cx="12" cy="12" r="2" />
+            </svg>
+            <span>Frontend & Data Hybrid</span>
+          </div>
+          <div class="about-info-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="2" y1="12" x2="22" y2="12" />
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+            <span>Remote Ready</span>
+          </div>
+        </div>
+
+        <div class="reveal reveal-d4">
+          <a href="cv.html" target="_blank" class="btn btn-dark btn-lg">
+            👀 View My CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="reveal section-label">Expertise</span>
+        <h2 class="reveal reveal-d1 section-title">Skills Dashboard</h2>
+        <p class="reveal reveal-d2 section-subtitle">
+          Practical, job-ready skills built through real projects and
+          consistent practice.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Left: Progress Bars -->
+        <div class="skills-bars">
+          <!-- Skill 1: Frontend (New) -->
+          <div class="reveal skill-item">
+            <div class="skill-header">
+              <div class="skill-label">
+                <div class="skill-icon skill-icon-blue">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <span>Frontend Development (HTML/CSS/JS)</span>
+              </div>
+              <span class="skill-percent" data-value="85">0%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill skill-fill-blue" data-width="85"></div>
+            </div>
+          </div>
+
+          <!-- Skill 2: Dashboard UI (New) -->
+          <div class="reveal reveal-d1 skill-item">
+            <div class="skill-header">
+              <div class="skill-label">
+                <div class="skill-icon skill-icon-purple">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                  </svg>
+                </div>
+                <span>Dashboard UI (Tailwind CSS)</span>
+              </div>
+              <span class="skill-percent" data-value="80">0%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill skill-fill-purple" data-width="80"></div>
+            </div>
+          </div>
+
+          <!-- Skill 3: Excel (Kept) -->
+          <div class="reveal reveal-d2 skill-item">
+            <div class="skill-header">
+              <div class="skill-label">
+                <div class="skill-icon skill-icon-green">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                    <line x1="3" y1="9" x2="21" y2="9" />
+                    <line x1="3" y1="15" x2="21" y2="15" />
+                    <line x1="9" y1="3" x2="9" y2="21" />
+                    <line x1="15" y1="3" x2="15" y2="21" />
+                  </svg>
+                </div>
+                <span>Microsoft Excel</span>
+              </div>
+              <span class="skill-percent" data-value="90">0%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill skill-fill-brand" data-width="90"></div>
+            </div>
+          </div>
+
+          <!-- Skill 4: Data Processing (Kept & Updated Name) -->
+          <div class="reveal reveal-d3 skill-item">
+            <div class="skill-header">
+              <div class="skill-label">
+                <div class="skill-icon skill-icon-emerald">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <ellipse cx="12" cy="5" rx="9" ry="3" />
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                  </svg>
+                </div>
+                <span>Data Processing & Cleaning</span>
+              </div>
+              <span class="skill-percent" data-value="85">0%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill skill-fill-emerald" data-width="85"></div>
+            </div>
+          </div>
+
+          <!-- Skill 5: Automation (Updated Name) -->
+          <div class="reveal reveal-d4 skill-item">
+            <div class="skill-header">
+              <div class="skill-label">
+                <div class="skill-icon skill-icon-amber">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                    </path>
+                  </svg>
+                </div>
+                <span>Web-based Automation</span>
+              </div>
+              <span class="skill-percent" data-value="80">0%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill skill-fill-amber" data-width="80"></div>
+            </div>
+          </div>
+
+          <!-- Skill 6: Admin Panel (Replaced VA) -->
+          <div class="reveal reveal-d5 skill-item">
+            <div class="skill-header">
+              <div class="skill-label">
+                <div class="skill-icon skill-icon-rose">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <span>Admin Panel Building</span>
+              </div>
+              <span class="skill-percent" data-value="78">0%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill skill-fill-rose" data-width="78"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Badges & Tools -->
+        <div class="skills-extras">
+          <div class="reveal">
+            <h3 class="skills-subtitle">Credibility Badges</h3>
+            <div class="badges-grid">
+              <span class="badge-item badge-amber">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7" />
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                </svg>
+                SSC Graduate 2023
+              </span>
+              <span class="badge-item badge-blue">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+                CST Diploma
+              </span>
+              <span class="badge-item badge-green">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                </svg>
+                60+ WPM Typing
+              </span>
+              <span class="badge-item badge-purple">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                Deadline Pro
+              </span>
+              <span class="badge-item badge-rose">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg>
+                Client First
+              </span>
+            </div>
+          </div>
+
+          <div class="reveal reveal-d2">
+            <h3 class="skills-subtitle">Tools I Use</h3>
+            <div class="tools-grid">
+              <!-- Microsoft Excel -->
+              <div class="tool-item">
+                <img src="assets/icon/excel.png" alt="Microsoft Excel" width="24" height="24" />
+                <span>Excel</span>
+              </div>
+
+              <!-- Google Sheets -->
+              <div class="tool-item">
+                <img src="assets/icon/sheet.png" alt="Google Sheets" width="24" height="24" />
+                <span>Sheets</span>
+              </div>
+
+              <!-- HTML -->
+              <div class="tool-item">
+                <img src="assets/icon/html.png" alt="HTML5" width="24" height="24" />
+                <span>HTML</span>
+              </div>
+
+              <!-- CSS -->
+              <div class="tool-item">
+                <img src="assets/icon/css.svg" alt="CSS3" width="24" height="24" />
+                <span>CSS</span>
+              </div>
+
+              <!-- JavaScript -->
+              <div class="tool-item">
+                <img src="assets/icon/js.png" alt="JavaScript" width="24" height="24" />
+                <span>JavaScript</span>
+              </div>
+
+              <!-- VS Code -->
+              <div class="tool-item">
+                <img src="assets/icon/vs.svg" alt="VS Code" width="24" height="24" />
+                <span>VS Code</span>
+              </div>
+
+              <!-- Git -->
+              <div class="tool-item">
+                <img src="assets/icon/git.png" alt="Git" width="24" height="24" />
+                <span>Git</span>
+              </div>
+
+              <!-- Figma -->
+              <div class="tool-item">
+                <img src="assets/icon/figma.png" alt="Figma" width="24" height="24" />
+                <span>Figma</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal reveal-d3 why-hire-card">
+            <div class="why-hire-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <div>
+              <h4 class="why-hire-title">Why Hire Me?</h4>
+              <p class="why-hire-text">
+                <i>I don't just manage your data; I build the web interfaces
+                  (like dashboards and data systems) that make managing that
+                  data effortless for your business.</i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="reveal section-label">Portfolio</span>
+          <h2 class="reveal reveal-d1 section-title">
+            Featured Projects & Dashboards
+          </h2>
+          <p class="reveal reveal-d2 section-subtitle">
+            Practical web solutions combining data processing, frontend development, and automation to optimize business workflows.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1 -->
+          <article class="reveal project-card">
+            <div class="project-image">
+              <img src="assets/image/4th.jpeg" alt="Excel Data Cleaning" />
+              <div class="project-image-overlay"></div>
+              <div class="project-badges">
+                <span class="project-badge project-badge-green">Excel</span>
+                <span class="project-badge project-badge-glass">Data Cleaning</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Advanced Excel Data Cleaning Dashboard</h3>
+              <p class="project-desc">
+                An automated spreadsheet system designed to process, clean, and structure messy raw datasets. It uses dynamic formulas and conditional formatting to ensure maximum data accuracy for business reporting.
+              </p>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span class="project-tag">Microsoft Excel</span>
+                  <span class="project-tag">Data Validation</span>
+                  <span class="project-tag">Automation</span>
+                </div>
+                <a href="https://advanced-excel-data-cleaning-dashbo.vercel.app/" class="project-link">
+                  View <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="reveal project-card">
+            <div class="project-image">
+              <img src="assets/image/6th.jpeg" alt="NESCO Card Generator" />
+              <div class="project-image-overlay"></div>
+              <div class="project-badges">
+                <span class="project-badge project-badge-purple">Generator</span>
+                <span class="project-badge project-badge-glass">Automation</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">NESCO Smart Card Generator System</h3>
+              <p class="project-desc">
+                A web-based automation tool that instantly generates NESCO cards. It takes raw user input and dynamically renders formatted, printable cards directly in the browser, eliminating manual data-entry and design hassle.
+              </p>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span class="project-tag">HTML/CSS</span>
+                  <span class="project-tag">JavaScript</span>
+                  <span class="project-tag">DOM Manipulation</span>
+                  <span class="project-tag">Web Automation</span>
+                </div>
+                <a href="https://nesco-card-generator.vercel.app/" class="project-link">
+                  View <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="reveal reveal-d1 project-card">
+            <div class="project-image">
+              <img src="assets/image/typing.jpeg" alt="Typing Speed Tester" />
+              <div class="project-image-overlay"></div>
+              <div class="project-badges">
+                <span class="project-badge project-badge-amber">Interactive</span>
+                <span class="project-badge project-badge-glass">Gamified</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Real-Time Typing Speed Tester</h3>
+              <p class="project-desc">
+                An interactive web application built to test and improve typing speed and accuracy in real-time. Features live WPM calculation, error tracking, and a dynamic results dashboard—serving as a live proof of my 60+ WPM proficiency.
+              </p>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span class="project-tag">HTML/CSS</span>
+                  <span class="project-tag">Tailwind</span>
+                  <span class="project-tag">JavaScript</span>
+                  <span class="project-tag">DOM Logic</span>
+                </div>
+                <a href="https://typing-speed-tester-gilt.vercel.app/" class="project-link">
+                  View <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5  -->
+          <article class="reveal project-card">
+            <div class="project-image">
+              <img src="assets/image/calculator.png" alt="Smart JS Calculator" style="object-position: top center;" />
+              <div class="project-image-overlay"></div>
+              <div class="project-badges">
+                <span class="project-badge project-badge-amber">Logic Based</span>
+                <span class="project-badge project-badge-blue">Interactive</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Smart JavaScript Calculator</h3>
+              <p class="project-desc">
+                A sleek, fully functional web calculator built from scratch. Demonstrates strong core JavaScript skills, including state management, dynamic UI updates, and complex mathematical logic execution.
+              </p>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span class="project-tag">HTML/CSS</span>
+                  <span class="project-tag">JavaScript</span>
+                  <span class="project-tag">DOM Logic</span>
+                  <span class="project-tag">State Management</span>
+                </div>
+                <a href="https://calculator-theta-steel-96.vercel.app/" target="_blank" class="project-link">
+                  View <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div> 
+      </div>
+    </section>
+      <!-- GitHub CTA -->
+      <div class="reveal github-cta">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+        </svg>
+        <div>
+          <div class="github-cta-title">
+            Explore source code, dashboard interfaces & automation workflows.
+          </div>
+          <div class="github-cta-sub">
+            Open source contributions & project repos
+          </div>
+        </div>
+        <a href="https://github.com/aminulislam424842" target="_blank" class="btn btn-dark">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+            <polyline points="15 3 21 3 21 9" />
+            <line x1="10" y1="14" x2="21" y2="3" />
+          </svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="reveal section-label">What I Offer</span>
+        <h2 class="reveal reveal-d1 section-title">Freelance Services</h2>
+        <p class="reveal reveal-d2 section-subtitle">
+          Reliable, efficient, and detail-oriented services tailored for
+          businesses and professionals.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="reveal service-card">
+          <div class="service-icon service-icon-brand">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+          </div>
+          <h3 class="service-title">Custom Dashboard Development</h3>
+          <p class="service-desc">
+            Interactive web dashboards to visualize your raw data beautifully.
+          </p>
+          <div class="service-price">Starting at $50</div>
+        </div>
+
+        <div class="reveal reveal-d1 service-card">
+          <div class="service-icon service-icon-green">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="3" y1="9" x2="21" y2="9"></line>
+              <line x1="3" y1="15" x2="21" y2="15"></line>
+              <line x1="9" y1="3" x2="9" y2="21"></line>
+              <polyline points="14 16 15.5 18 19 13.5"></polyline>
+            </svg>
+          </div>
+          <h3 class="service-title">Advanced Excel Automation</h3>
+          <p class="service-desc">
+            Complex formulas, macros, and automated spreadsheet solutions.
+          </p>
+          <div class="service-price service-price-green">Starting at $25</div>
+        </div>
+
+        <div class="reveal reveal-d2 service-card">
+          <div class="service-icon service-icon-red">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+              <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Web-Based Data Entry System</h3>
+          <p class="service-desc">
+            Custom frontend forms to replace manual spreadsheet tracking.
+          </p>
+          <div class="service-price service-price-red">Starting at $80</div>
+        </div>
+
+        <div class="reveal service-card">
+          <div class="service-icon service-icon-purple">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+            </svg>
+          </div>
+          <h3 class="service-title">Data Cleaning & Processing</h3>
+          <p class="service-desc">
+            Transforming messy raw datasets into accurate, structured formats.
+          </p>
+          <div class="service-price service-price-purple">
+            Starting at $20
+          </div>
+        </div>
+
+        <div class="reveal reveal-d1 service-card">
+          <div class="service-icon service-icon-amber">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="3" y1="9" x2="21" y2="9"></line>
+              <line x1="9" y1="21" x2="9" y2="9"></line>
+            </svg>
+          </div>
+          <h3 class="service-title">Interactive UI/UX Design</h3>
+          <p class="service-desc">
+            Clean, functional, and user-friendly web interfaces.
+          </p>
+          <div class="service-price service-price-amber">Starting at $40</div>
+        </div>
+
+        <div class="reveal reveal-d2 service-card">
+          <div class="service-icon service-icon-sky">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="17 1 21 5 17 9"></polyline>
+              <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
+              <polyline points="7 23 3 19 7 15"></polyline>
+              <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Spreadsheet to Web Migration</h3>
+          <p class="service-desc">
+            Converting your old Excel data into modern web applications.
+          </p>
+          <div class="service-price service-price-sky">Starting at $60</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TIMELINE ===== -->
+  <section id="timeline" class="section section-alt">
+    <div class="container container-narrow">
+      <div class="section-header">
+        <span class="reveal section-label">My Path</span>
+        <h2 class="reveal reveal-d1 section-title">Learning Journey</h2>
+      </div>
+
+      <div class="timeline">
+        <!-- Block 1 -->
+        <div class="reveal timeline-item">
+          <div class="timeline-dot timeline-dot-brand">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+              <path d="M6 12v5c3 3 9 3 12 0v-5" />
+            </svg>
+          </div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-year timeline-year-brand">2023</span>
+              <span class="timeline-phase">Foundation</span>
+            </div>
+            <h3 class="timeline-title">
+              Completed SSC — Mosjid Mission Academy
+            </h3>
+            <p class="timeline-desc">
+              Built a strong academic foundation. Discovered a deep passion
+              for structured thinking, logical problem-solving, and data
+              organization.
+            </p>
+          </div>
+        </div>
+
+        <!-- Block 2 -->
+        <div class="reveal reveal-d1 timeline-item">
+          <div class="timeline-dot timeline-dot-blue">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+              <path d="M6 12v5c3 3 9 3 12 0v-5" />
+            </svg>
+          </div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-year timeline-year-blue">2024</span>
+              <span class="timeline-phase">Skill Acquisition</span>
+            </div>
+            <h3 class="timeline-title">
+              CST Diploma Begins — 1st & 2nd Semester
+            </h3>
+            <p class="timeline-desc">
+              Started learning core programming and computer fundamentals.
+              Mastered Microsoft Excel & Google Sheets, discovering the true
+              power of data manipulation and automation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Block 3 -->
+        <div class="reveal reveal-d2 timeline-item">
+          <div class="timeline-dot timeline-dot-purple">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+              <path
+                d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+              <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+              <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+            </svg>
+          </div>
+          <div class="timeline-connector"></div>
+          <div class="timeline-card">
+            <div class="timeline-meta">
+              <span class="timeline-year timeline-year-purple">2025</span>
+              <span class="timeline-phase">The Hybrid Shift</span>
+            </div>
+            <h3 class="timeline-title">
+              3rd & 4th Semester — Deep Skill Building
+            </h3>
+            <p class="timeline-desc">
+              Took a strategic turn by combining Data skills with Frontend
+              Development (HTML/CSS/JS). Built functional web interfaces,
+              including the NESCO Card Generator and Student DB System.
+            </p>
+          </div>
+        </div>
+
+        <!-- Block 4 -->
+        <div class="reveal reveal-d3 timeline-item">
+          <div class="timeline-dot timeline-dot-green">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          </div>
+          <div class="timeline-card timeline-card-current">
+            <div class="timeline-meta">
+              <!-- 2026 এর বদলে Present লেখা হয়েছে -->
+              <span class="timeline-year timeline-year-green">2026</span>
+              <span class="timeline-phase timeline-phase-current"><span class="pulse-dot"></span> 5th Semester</span>
+            </div>
+            <h3 class="timeline-title">Freelance Launch</h3>
+            <p class="timeline-desc">
+              Fully focused on building a job-ready portfolio. Offering custom
+              web dashboards, data automation, and frontend solutions as a
+              hybrid developer to remote clients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="reveal section-label">Get in Touch</span>
+          <h2 class="reveal reveal-d1 section-title">
+            Let's Work<br /><span class="gradient-text">Together</span>
+          </h2>
+          <p class="reveal reveal-d2 contact-subtitle">
+            Have data that needs cleaning? Spreadsheets that need organizing?
+            Or just want to say hello? I'm always open to discussing new
+            projects and opportunities.
+          </p>
+
+          <div class="reveal reveal-d3 contact-links">
+            <a href="mailto:aminulislam@example.com" class="contact-link-card">
+              <div class="contact-link-icon contact-link-icon-blue">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-link-label">Email</div>
+                <div class="contact-link-value">
+                  aminulislam424842@gmail.com
+                </div>
+              </div>
+            </a>
+
+            <a href="https://wa.me/8801709150885" target="_blank" class="contact-link-card">
+              <div class="contact-link-icon contact-link-icon-green">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                </svg>
+              </div>
+              <div>
+                <div class="contact-link-label">WhatsApp</div>
+                <div class="contact-link-value">+880 1709150885</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="reveal reveal-d4">
+            <h4 class="skills-subtitle">Find Me On</h4>
+
+            <div class="social-links-contact">
+              <!-- GitHub -->
+              <a href="https://github.com/aminulislam424842" target="_blank" class="social-btn github-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+                <div class="btn-text-wrap">
+                  <span class="btn-name">GitHub</span>
+                </div>
+              </a>
+
+              <!-- Fiverr -->
+              <a href="#" class="social-btn fiverr-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                  <path
+                    d="M23.004 15.588a.995.995 0 10.002-1.99.995.995 0 00-.002 1.99zm-.996-3.705h-.85c-.546 0-.84.41-.998.836l-.568 1.586h-.007l-.57-1.586c-.16-.426-.45-.836-.998-.836h-.85c-.26 0-.468.21-.468.47v3.66c0 .26.21.47.468.47h.63c.26 0 .47-.21.47-.47v-1.81l.655 1.844c.1.278.345.435.632.435h.096c.288 0 .532-.157.632-.435l.655-1.845v1.81c0 .26.21.47.47.47h.63c.26 0 .468-.21.468-.47v-3.66c0-.26-.21-.47-.468-.47zm-12.66 0H6.76c-.26 0-.468.21-.468.47v3.66c0 .26.21.47.468.47h1.848c.26 0 .47-.21.47-.47v-.396c0-.26-.21-.47-.47-.47H7.868V16.43h.723c.26 0 .47-.21.47-.47v-.396c0-.26-.21-.47-.47-.47h-.723v-.508h1.06c.26 0 .468-.21.468-.47v-.396c0-.26-.21-.47-.468-.47zm8.89 0c-.26 0-.468.21-.468.47v2.15l-1.5-2.38c-.16-.254-.39-.364-.65-.364h-.4c-.26 0-.47.21-.47.47v3.66c0 .26.21.47.47.47h.63c.26 0 .47-.21.47-.47v-2.15l1.5 2.38c.16.254.39.364.65.364h.4c.26 0 .47-.21.47-.47v-3.66c0-.26-.21-.47-.47-.47h-.652zM8.89 11.883c-.26 0-.468.21-.468.47v3.66c0 .26.21.47.468.47h.63c.26 0 .47-.21.47-.47V15l.655 1.844c.1.278.345.435.632.435h.096c.288 0 .532-.157.632-.435L12.66 15v1.013c0 .26.21.47.47.47h.63c.26 0 .468-.21.468-.47v-3.66c0-.26-.21-.47-.468-.47h-.63c-.26 0-.47.21-.47.47v.6l-.655-1.844c-.1-.278-.345-.435-.632-.435h-.096c-.288 0-.532.157-.632.435l-.655 1.844v-.6c0-.26-.21-.47-.47-.47h-.63z" />
+                </svg>
+                <div class="btn-text-wrap">
+                  <span class="btn-name">Fiverr</span>
+                </div>
+              </a>
+
+              <!-- Upwork -->
+              <a href="#" class="social-btn upwork-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                  <path
+                    d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.548-1.405-.002-2.543-1.143-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z" />
+                </svg>
+                <div class="btn-text-wrap">
+                  <span class="btn-name">Upwork</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <form id="contactForm" class="contact-form">
+            <h3 class="contact-form-title">Send a Message</h3>
+            <div class="form-group">
+              <label class="form-label">Full Name</label>
+              <input type="text" id="nameInput" placeholder="John Doe" required class="form-input" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input type="email" id="emailInput" placeholder="john@example.com" required class="form-input" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Service Needed</label>
+              <select id="serviceInput" class="form-input">
+                <option value="">Select a service...</option>
+                <option value="data-entry">
+                  Custom Dashboard Development
+                </option>
+                <option value="excel">Advanced Excel Automation</option>
+                <option value="pdf-conversion">
+                  Web-Based Data Entry System
+                </option>
+                <option value="admin-support">
+                  Data Cleaning & Processing
+                </option>
+                <option value="data-organization">
+                  Interactive UI/UX Design
+                </option>
+                <option value="data-organization">
+                  Spreadsheet to Web Migration
+                </option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea id="messageInput" rows="4" placeholder="Tell me about your project..." required
+                class="form-input form-textarea"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-full">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <img src="assets/image/logo.png" alt="Aminul Islam Logo" class="nav-logo-img" />
+            <span class="nav-logo-text">Aminul Islam</span>
+          </div>
+          <p class="footer-desc">
+            Turning raw data into actionable decisions. CST student and
+            freelance-ready frontend developer from Bangladesh.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <div class="footer-links">
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Connect</h4>
+          <div class="footer-socials">
+            <a href="mailto:aminulislam424842@.com" class="footer-social" aria-label="Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </a>
+            <a href="https://wa.me/8801709150885" target="_blank" class="footer-social footer-social-green"
+              aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+              </svg>
+            </a>
+            <a href="https://github.com/" target="_blank" class="footer-social" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+              </svg>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" class="footer-social footer-social-blue"
+              aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Aminul Islam. All rights reserved.</p>
+        <p>Designed with <span class="text-red">♥</span> in Bangladesh</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div id="toast" class="toast">
+    <div class="toast-inner">
+      <div class="toast-icon" id="toastIcon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+          <polyline points="22 4 12 14.01 9 11.01" />
+        </svg>
+      </div>
+      <div>
+        <div class="toast-title" id="toastTitle">Success!</div>
+        <div class="toast-message" id="toastMessage">
+          Your message has been sent.
+        </div>
+      </div>
+      <button onclick="hideToast()" class="toast-close" aria-label="Close">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

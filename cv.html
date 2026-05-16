@@ -1,0 +1,848 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aminul Islam - CV</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --sidebar-bg: #1a2744;
+        --sidebar-bg-dark: #131d33;
+        --accent: #4a90d9;
+        --accent-light: #5ba3ec;
+        --text-light: #ffffff;
+        --text-muted: #a8b8cc;
+        --text-dark: #2c3e50;
+        --text-body: #4a5568;
+        --bg-white: #ffffff;
+        --section-line: #e2e8f0;
+        --skill-bar-bg: rgba(255, 255, 255, 0.12);
+      }
+
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          sans-serif;
+        background: #e8ecf1;
+        color: var(--text-body);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        padding: 20px;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .cv-container {
+        width: 210mm;
+        min-height: 297mm;
+        max-width: 100%;
+        background: var(--bg-white);
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+      }
+
+      /* ===== SIDEBAR ===== */
+      .sidebar {
+        background: linear-gradient(
+          180deg,
+          var(--sidebar-bg) 0%,
+          var(--sidebar-bg-dark) 100%
+        );
+        color: var(--text-light);
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+      }
+
+      .profile-photo-wrapper {
+        display: flex;
+        justify-content: center;
+      }
+
+      .profile-photo {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 3px solid var(--accent);
+        overflow: hidden;
+        box-shadow: 0 0 0 4px rgba(74, 144, 217, 0.2);
+      }
+
+      .profile-photo .placeholder {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, var(--accent), #6c5ce7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 38px;
+        font-weight: 700;
+        color: white;
+      }
+
+      .profile-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+        display: block;
+      }
+
+      .sidebar-section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .sidebar-title {
+        font-size: 10.5px;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        color: var(--accent);
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 9px;
+      }
+
+      .contact-item i {
+        font-size: 11px;
+        color: var(--accent);
+        width: 15px;
+        text-align: center;
+        margin-top: 2px;
+        flex-shrink: 0;
+      }
+
+      .contact-item span {
+        font-size: 11px;
+        font-weight: 400;
+        color: var(--text-muted);
+        line-height: 1.5;
+      }
+
+      .skill-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .skill-item {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .skill-name {
+        font-size: 11px;
+        font-weight: 500;
+        color: var(--text-muted);
+      }
+
+      .skill-bar {
+        width: 100%;
+        height: 5px;
+        background: var(--skill-bar-bg);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .skill-fill {
+        height: 100%;
+        border-radius: 10px;
+        background: linear-gradient(90deg, var(--accent), var(--accent-light));
+      }
+
+      .language-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .language-item {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .language-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .language-name {
+        font-size: 11px;
+        font-weight: 500;
+        color: var(--text-muted);
+      }
+
+      .language-level {
+        font-size: 9px;
+        font-weight: 600;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .lang-bar {
+        width: 100%;
+        height: 5px;
+        background: var(--skill-bar-bg);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .lang-fill {
+        height: 100%;
+        border-radius: 10px;
+        background: linear-gradient(90deg, var(--accent), var(--accent-light));
+      }
+
+      .strength-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+
+      .strength-tag {
+        font-size: 9.5px;
+        font-weight: 500;
+        color: var(--text-muted);
+        background: rgba(74, 144, 217, 0.1);
+        border: 1px solid rgba(74, 144, 217, 0.2);
+        padding: 3px 8px;
+        border-radius: 20px;
+      }
+
+      /* ===== MAIN CONTENT ===== */
+      .main-content {
+        padding: 32px 28px 26px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      .name-header {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        padding-bottom: 14px;
+        border-bottom: 2.5px solid var(--sidebar-bg);
+      }
+
+      .full-name {
+        font-size: 28px;
+        font-weight: 800;
+        color: var(--sidebar-bg);
+        letter-spacing: -0.5px;
+      }
+
+      .job-title {
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--accent);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-top: 3px;
+      }
+
+      .section {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .section-header {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        margin-bottom: 1px;
+      }
+
+      .section-icon {
+        width: 26px;
+        height: 26px;
+        background: var(--sidebar-bg);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 11px;
+        flex-shrink: 0;
+      }
+
+      .section-title {
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--sidebar-bg);
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+      }
+
+      .section-divider {
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(90deg, var(--section-line), transparent);
+      }
+
+      .objective-text {
+        font-size: 11.5px;
+        line-height: 1.75;
+        color: var(--text-body);
+      }
+
+      .edu-item {
+        display: flex;
+        gap: 14px;
+        padding: 7px 0;
+      }
+
+      .edu-year {
+        min-width: 76px;
+        font-size: 10.5px;
+        font-weight: 600;
+        color: var(--accent);
+        background: rgba(74, 144, 217, 0.08);
+        padding: 3px 8px;
+        border-radius: 4px;
+        text-align: center;
+        height: fit-content;
+      }
+
+      .edu-details {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .edu-degree {
+        font-size: 12.5px;
+        font-weight: 600;
+        color: var(--text-dark);
+      }
+
+      .edu-school {
+        font-size: 11px;
+        color: var(--text-body);
+      }
+
+      .edu-note {
+        font-size: 10px;
+        color: #718096;
+        font-style: italic;
+      }
+
+      .project-item {
+        padding: 6px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+      }
+
+      .project-name {
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--text-dark);
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .project-name i {
+        font-size: 10px;
+        color: var(--accent);
+      }
+
+      .project-desc {
+        font-size: 11px;
+        color: var(--text-body);
+        line-height: 1.65;
+        padding-left: 16px;
+      }
+
+      .project-tech {
+        font-size: 9.5px;
+        color: var(--accent);
+        font-weight: 500;
+        padding-left: 16px;
+      }
+
+      .exp-item {
+        display: flex;
+        gap: 14px;
+        padding: 6px 0;
+      }
+
+      .exp-period {
+        min-width: 76px;
+        font-size: 10.5px;
+        font-weight: 600;
+        color: var(--accent);
+        background: rgba(74, 144, 217, 0.08);
+        padding: 3px 8px;
+        border-radius: 4px;
+        text-align: center;
+        height: fit-content;
+      }
+
+      .exp-details {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+      }
+
+      .exp-role {
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--text-dark);
+      }
+
+      .exp-desc {
+        font-size: 11px;
+        color: var(--text-body);
+        line-height: 1.6;
+      }
+
+      .exp-highlights {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .exp-highlights li {
+        font-size: 10.5px;
+        color: var(--text-body);
+        line-height: 1.6;
+        padding-left: 13px;
+        position: relative;
+      }
+
+      .exp-highlights li::before {
+        content: "›";
+        position: absolute;
+        left: 2px;
+        color: var(--accent);
+        font-weight: 700;
+        font-size: 12px;
+      }
+
+      /* ===== DOWNLOAD BUTTON (screen only) ===== */
+      .download-btn {
+        position: fixed;
+        top: 14px;
+        right: 14px;
+        background: var(--sidebar-bg);
+        color: white;
+        border: none;
+        padding: 11px 22px;
+        border-radius: 8px;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+        z-index: 10;
+        transition: all 0.2s;
+        font-family: "Inter", sans-serif;
+      }
+
+      .download-btn:hover {
+        background: var(--accent);
+        transform: translateY(-2px);
+      }
+
+      /* ===== PRINT / PDF ===== */
+      @media print {
+        body {
+          background: white;
+          padding: 0;
+          margin: 0;
+        }
+
+        .cv-container {
+          box-shadow: none;
+          width: 100%;
+          min-height: auto;
+          grid-template-columns: 220px 1fr;
+        }
+
+        .download-btn,
+        .ats-note {
+          display: none !important;
+        }
+
+        .skill-fill,
+        .lang-fill,
+        .sidebar,
+        .section-icon,
+        .profile-photo,
+        .strength-tag,
+        .edu-year,
+        .exp-period {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+
+        @page {
+          size: A4;
+          margin: 0;
+        }
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 8px;
+        }
+        .cv-container {
+          grid-template-columns: 1fr;
+          width: 100%;
+          min-height: auto;
+        }
+        .sidebar {
+          padding: 20px 16px;
+          align-items: center;
+        }
+        .main-content {
+          padding: 20px 16px;
+        }
+        .full-name {
+          font-size: 22px;
+        }
+        .download-btn {
+          font-size: 11px;
+          padding: 8px 14px;
+          top: 8px;
+          right: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cv-container">
+      <!-- ===== SIDEBAR ===== -->
+      <aside class="sidebar">
+        <div class="profile-photo-wrapper">
+          <div class="profile-photo">
+            <img
+              src="assets/image/2nd.jpg"
+              alt="Aminul Islam"
+              class="profile-img"
+            />
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="sidebar-section">
+          <div class="sidebar-title">Contact</div>
+          <div class="contact-list">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Rajshahi, Bangladesh</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>aminulislam424842@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+880 1709150885</span>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-github"></i>
+              <span>github.com/aminulislam424842</span>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <span>linkedin.com/in/aminul-islam-239bb5386</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="sidebar-section">
+          <div class="sidebar-title">Technical Skills</div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">HTML & CSS</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 65%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Responsive Design</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Git & GitHub</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">MS Excel / Sheets</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 78%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Data Processing</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Skills -->
+        <div class="sidebar-section">
+          <div class="sidebar-title">Other Skills</div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">Fast Typing (Speed & Accuracy)</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 88%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">File Conversion (PDF/Word/Excel)</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 82%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Administrative Support</span>
+              <div class="skill-bar">
+                <div class="skill-fill" style="width: 72%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Strengths -->
+        <div class="sidebar-section">
+          <div class="sidebar-title">Strengths</div>
+          <div class="strength-tags">
+            <span class="strength-tag">Quick Learner</span>
+            <span class="strength-tag">Problem Solver</span>
+            <span class="strength-tag">Detail-Oriented</span>
+            <span class="strength-tag">Disciplined</span>
+            <span class="strength-tag">Consistent</span>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="sidebar-section">
+          <div class="sidebar-title">Languages</div>
+          <div class="language-list">
+            <div class="language-item">
+              <div class="language-header">
+                <span class="language-name">Bengali</span>
+                <span class="language-level">Native</span>
+              </div>
+              <div class="lang-bar">
+                <div class="lang-fill" style="width: 98%"></div>
+              </div>
+            </div>
+            <div class="language-item">
+              <div class="language-header">
+                <span class="language-name">English</span>
+                <span class="language-level">Intermediate</span>
+              </div>
+              <div class="lang-bar">
+                <div class="lang-fill" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ===== MAIN CONTENT ===== -->
+      <main class="main-content">
+        <div class="name-header">
+          <h1 class="full-name">Aminul Islam Mahi</h1>
+          <p class="job-title">Web Developer & Data Entry Specialist</p>
+        </div>
+
+        <!-- Career Objective -->
+        <div class="section">
+          <div class="section-header">
+            <div class="section-icon"><i class="fas fa-bullseye"></i></div>
+            <h2 class="section-title">Career Objective</h2>
+          </div>
+          <div class="section-divider"></div>
+          <p class="objective-text">
+            Motivated and detail-oriented Computer Science student seeking
+            opportunities as a
+            <strong>Web Developer</strong> or
+            <strong>Data Entry / Virtual Assistant</strong>. Eager to apply my
+            technical skills in HTML, CSS, JavaScript, and data management tools
+            to contribute to organizational goals while continuing to learn and
+            grow professionally. Committed to delivering accurate, efficient,
+            and high-quality results in every task.
+          </p>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+          <div class="section-header">
+            <div class="section-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h2 class="section-title">Education</h2>
+          </div>
+          <div class="section-divider"></div>
+          <div class="edu-item">
+            <span class="edu-year">2024 – Present</span>
+            <div class="edu-details">
+              <div class="edu-degree">
+                Diploma in Computer Science & Technology (CST)
+              </div>
+              <div class="edu-school">Polytechnic Institute, Rajshahi</div>
+              <div class="edu-note">Currently in 5th Semester</div>
+            </div>
+          </div>
+          <div class="edu-item">
+            <span class="edu-year">2023</span>
+            <div class="edu-details">
+              <div class="edu-degree">Secondary School Certificate (SSC)</div>
+              <div class="edu-school">Mosjid Mission Academy</div>
+              <div class="edu-note">GPA: 5.00 out of 5.00</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section">
+          <div class="section-header">
+            <div class="section-icon"><i class="fas fa-code"></i></div>
+            <h2 class="section-title">Projects</h2>
+          </div>
+          <div class="section-divider"></div>
+          <div class="project-item">
+            <div class="project-name">
+              <i class="fas fa-caret-right"></i> NESCO Card Generator
+            </div>
+            <div class="project-desc">
+              Developed a web-based tool enabling users to input card details,
+              preview output in real-time, and print directly from the browser.
+              Streamlined card generation with an intuitive UI.
+            </div>
+            <div class="project-tech">
+              Tech: HTML, CSS, JavaScript, Print API
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-name">
+              <i class="fas fa-caret-right"></i> Personal Portfolio Website
+            </div>
+            <div class="project-desc">
+              Designed and built a fully responsive personal portfolio featuring
+              modern UI patterns, smooth animations, and mobile-first layout to
+              showcase projects and skills.
+            </div>
+            <div class="project-tech">
+              Tech: HTML, CSS, JavaScript, Responsive Design
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-name">
+              <i class="fas fa-caret-right"></i> Excel Data Management Tool
+            </div>
+            <div class="project-desc">
+              Created an automated Excel tool with advanced filtering, data
+              cleaning functions, and batch processing capabilities to manage
+              and organize large datasets efficiently.
+            </div>
+            <div class="project-tech">
+              Tech: Microsoft Excel, VBA Macros, Data Processing
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="section">
+          <div class="section-header">
+            <div class="section-icon"><i class="fas fa-briefcase"></i></div>
+            <h2 class="section-title">Experience</h2>
+          </div>
+          <div class="section-divider"></div>
+          <div class="exp-item">
+            <span class="exp-period">2023 – Present</span>
+            <div class="exp-details">
+              <div class="exp-role">Self-Driven Project-Based Learning</div>
+              <div class="exp-desc">
+                Building real-world web applications and data tools through
+                independent study and hands-on practice.
+              </div>
+              <ul class="exp-highlights">
+                <li>
+                  Designed and deployed 3+ functional web projects from concept
+                  to completion
+                </li>
+                <li>
+                  Handled real-world data tasks including cleaning, processing,
+                  and formatting datasets
+                </li>
+                <li>
+                  Collaborated on GitHub with version control and structured
+                  project documentation
+                </li>
+                <li>
+                  Practiced fast, accurate data entry and file conversion for
+                  administrative tasks
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
