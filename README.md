@@ -113,13 +113,13 @@ A powerful spreadsheet processing system for cleaning messy datasets efficiently
 
 ## 💻 Desktop View
 
-![Desktop Preview](./screenshots/desktop.png)
+![Desktop Preview](https://github.com/aminulislam424842/Portfolio/blob/3c1526f773b4c80b159b343ae6266ca83d55ede5/screnshot/desktop.png)
 
 ---
 
 ## 📱 Mobile View
 
-![Mobile Preview](./screenshots/mobile.png)
+![Mobile Preview](https://github.com/aminulislam424842/Portfolio/blob/3c1526f773b4c80b159b343ae6266ca83d55ede5/screnshot/mobile.png)
 
 ---
 
