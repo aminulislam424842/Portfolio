@@ -105,10 +105,17 @@ const counterObserver = new IntersectionObserver((entries) => {
       counterObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.5 });
+}, { rootMargin: '0px', threshold: 0.1 }); 
 
-const hero = document.getElementById('hero');
-if (hero) counterObserver.observe(hero);
+const countersContainer = document.querySelector('.hero-stats');
+if (countersContainer) {
+  counterObserver.observe(countersContainer);
+} else {
+  document.querySelectorAll('.counter').forEach(c => {
+    animateCounter(c, 0, parseInt(c.getAttribute('data-target')), 2000, '');
+  });
+
+}
 
 // ===== Contact Form =====
 document.getElementById('contactForm').addEventListener('submit', function (e) {
