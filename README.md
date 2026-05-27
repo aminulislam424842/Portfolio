@@ -125,19 +125,6 @@ Idea → Planning → UI Design → Development → Optimization → Deployment
 
 ---
 
-# 🔥 Top Languages
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aminulislam424842&layout=compact&theme=tokyonight" />
-</p>
-
-# 🏆 GitHub Trophy
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=aminulislam424842&theme=tokyonight" />
-</p>
-
----
 
 # 📂 Featured Projects
 
